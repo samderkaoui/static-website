@@ -4,6 +4,8 @@
 
 ---
 
+Ce fichier Docker Compose configure un serveur web Nginx avec support HTTPS utilisant un certificat auto-signé (tls.sh). Il sert du contenu à partir d'un répertoire local et utilise une configuration Nginx personnalisée. Le serveur est accessible à la fois via HTTP (port 80) et HTTPS (port 443).
+
 ```yaml
 version: '3.8'
 
