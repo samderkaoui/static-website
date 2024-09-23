@@ -12,11 +12,18 @@ services:
     image: nginx:alpine
     restart: always
     volumes:
-      - ./static-website:/usr/share/nginx/html      
-#      - ./fichierdeconf.conf:/etc/nginx/conf.d/default.conf
+# SANS FICHIER DE CONF:
+#      - ./html5up-eventually:/usr/share/nginx/html
+# AVEC FICHIER DE CONF:    
+      - ./fichierdeconf.conf:/etc/nginx/conf.d/default.conf
+      - ./html5up-eventually:/var/www/html
+# AVEC CERTIFICAT TLS + FICHIER DE CONF :
 #      - ./selfsigned.crt:/etc/ssl/certs/ssl.crt
 #      - ./selfsigned.key:/etc/ssl/private/ssl.key
     ports:
       - "80:80"
 #      - "443:443"
+
+
+
 ```
