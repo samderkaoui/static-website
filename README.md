@@ -12,7 +12,7 @@ services:
     image: nginx:alpine
     restart: always
     volumes:
-      - ./static-websitey:/usr/share/nginx/html      
+      - ./static-website:/usr/share/nginx/html      
 #      - ./fichierdeconf.conf:/etc/nginx/conf.d/default.conf
 #      - ./selfsigned.crt:/etc/ssl/certs/ssl.crt
 #      - ./selfsigned.key:/etc/ssl/private/ssl.key
